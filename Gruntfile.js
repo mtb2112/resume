@@ -19,10 +19,21 @@ module.exports = function(grunt) {
                 livereload: false,
             },
             styles: {
-                files: ['less/**/*.less'], // which files to watch
-                tasks: ['less'],
+                files: ['less/**/*.less', 'app/views/**/*.jade'], // which files to watch
+                tasks: ['less', 'jade'],
                 options: {
                     nospawn: true
+                }
+            }
+        },
+
+        jade: {
+            compile: {
+                options: {
+                    pretty: true,
+                },
+                files: {
+                    'index.html' : 'app/views/index.jade'
                 }
             }
         }
@@ -30,5 +41,6 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['less', 'watch']);
+    grunt.loadNpmTasks('grunt-contrib-jade');
+    grunt.registerTask('default', ['less', 'watch', 'jade']);
 };
