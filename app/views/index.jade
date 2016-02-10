@@ -1,0 +1,130 @@
+doctype html
+html
+    head
+        title
+        - var cssRoot = 'css';
+        link(rel='stylesheet', href='#{cssRoot}/skeleton.css')
+        link(rel='stylesheet', href='#{cssRoot}/global.css')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+    body
+        div#top.profile-banner
+            div.container
+                h1.author Paul Guardino
+                p.sub Interactive Resume
+            div.photo-overlay
+            a.scroll-down(href='#profile')
+                i.fa.fa-level-down
+        nav.navbar.navbar-default#navbar-example(role='navigation')
+            div.main-nav
+                ul.nav.navbar-nav
+                    li.active Profile
+                    li Experience
+                    li Skills
+                    li Contact
+        div.profile-background
+            div#profile.container
+                h2 Profile
+                p.sub Front-End Web Developer
+                div.row
+                    div.one-third.column
+                        h3 About Me
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    div.one-third.column
+                        img(src='images/guardinopaul.jpg', alt='Paul Guardino')
+                    div.one-third.column
+                        h3 Details
+                        p
+                            strong Name:
+                            br
+                            |Paul Guardino
+                            br
+                            strong Age:
+                            br
+                            |34
+                            br
+                            strong Location:
+                            br
+                            |Phoenixville, Pennsylvania
+        div#experience.container
+            h2 Experiences
+            p.sub "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            hr
+            h3 Education
+            div.experiences
+                div.experience.row
+                    div.four.columns
+                        h4 Philadelphia University
+                        p.experience-duration September 2005 - May 2009
+                    div.eight.columns
+                        p
+                            strong Bachelor's Degree - Digital Design
+                            span.experience-description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            i.fa.fa-map-marker
+                                span.experience-location Philadelphia, Pennsylvania
+                            i.fa.fa-external-link
+                                span.experience-link
+                                    a(href='http://www.philau.edu', target='_blank') http://www.philau.edu
+                div.experience.row
+                    div.four.columns
+                        h4 Methacton
+                        p.experience-duration September 1995 - June 1999
+                    div.eight.columns
+                        p
+                            strong High School Diploma
+                            span.experience-description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            i.fa.fa-map-marker
+                                span.experience-location Eagleville, Pennsylvania
+                            i.fa.fa-external-link
+                                span.experience-link
+                                    a(href='http://www.methacton.org/Domain/54', target='_blank') http://www.methacton.org
+            hr
+            h3 Careers
+            div.experiences
+                div.experience.row
+                    div.four.columns
+                        h4 Ebay Enterprise
+                        p.experience-duration February 2012 - current
+                    div.eight.columns
+                        p
+                            strong Fulltime - Front-End Web Engineer
+                            span.experience-description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            i.fa.fa-map-marker
+                                span.experience-location King of Prussia, Pennsylvania
+                            i.fa.fa-external-link
+                                span.experience-link
+                                    a(href='http://www.ebayenterprise.com/', target='_blank') http://www.ebayenterprise.com
+                div.experience.row
+                    div.four.columns
+                        h4 QVC
+                        p.experience-duration November 2009 - December 2011
+                    div.eight.columns
+                        p
+                            strong Fulltime - Web Production
+                            span.experience-description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            i.fa.fa-map-marker
+                                span.experience-location West Chester, Pennsylvania
+                            i.fa.fa-external-link
+                                span.experience-link
+                                    a(href='http://www.qvc.com/', target='_blank') http://www.qvc.com
+                div.experience.row
+                    div.four.columns
+                        h4 Red Tettemer
+                        p.experience-duration June 2009 - September 2009
+                    div.eight.columns
+                        p
+                            strong Internship - Wordpress Developer
+                            span.experience-description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            i.fa.fa-map-marker
+                                span.experience-location Philadelphia, Pennsylvania
+                            i.fa.fa-external-link
+                                span.experience-link
+                                    a(href='http://www.rtop.com/', target='_blank') http://www.rtop.com
+        div.abilities-background
+            div#abilities.container
+                h2 Abilities
+                p.sub "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                hr
+                h3 Skills
+                div.row
+                    div.one-half.column
+                    div.one-half.column

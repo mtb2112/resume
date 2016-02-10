@@ -9,7 +9,8 @@ module.exports = function(grunt) {
                     dumpLineNumbers: 'false'
                 },
                 files: {
-                    "css/skeleton.css": "less/skeleton.less"
+                    "css/skeleton.css": "less/skeleton.less",
+                    "css/global.css": "less/global.less"
                 }
             }
         },
