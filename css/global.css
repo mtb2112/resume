@@ -1,0 +1,63 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+* Less Version by Seth Coelen https://github.com/whatsnewsaes
+*/
+body {
+  margin: 0;
+}
+.profile-banner {
+  background: no-repeat center right fixed url(../images/banner-background.jpg);
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin-bottom: 0;
+  padding: 0;
+}
+.profile-banner .container {
+  position: relative;
+  top: 28%;
+  z-index: 4;
+  text-align: center;
+}
+.profile-banner .photo-overlay {
+  background-color: #dc3522;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .55;
+  filter: alpha(opacity=55);
+  z-index: 2;
+}
+.profile-banner .scroll-down {
+  height: 80px;
+  width: 110px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  background-color: #2a2c2b;
+  text-align: center;
+  z-index: 6;
+}
+.profile-banner .fa-level-down {
+  color: #ffffff;
+  font-size: 3em;
+  padding-right: 2px;
+  padding-top: 20px;
+  animation-name: animationName;
+}
+lesshat-selector {
+  -lh-property: 0; } 
+@-webkit-keyframes animationName{ 0%{ -webkit-transform: scale(1.5); color: blue; } 100%{ -webkit-transform: scale(2); color: red }}
+@-moz-keyframes animationName{ 0%{ -moz-transform: scale(1.5); color: blue; } 100%{ -moz-transform: scale(2); color: red }}
+@-o-keyframes animationName{ 0%{ -o-transform: scale(1.5); color: blue; } 100%{ -o-transform: scale(2); color: red }}
+@keyframes animationName{ 0%{-webkit-transform: scale(1.5);-moz-transform: scale(1.5);-ms-transform: scale(1.5);transform: scale(1.5); color: blue; } 100%{-webkit-transform: scale(2);-moz-transform: scale(2);-ms-transform: scale(2);transform: scale(2); color: red };
+}

@@ -23,6 +23,15 @@
 - Clearing
 - Media Queries
 */
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+* Less Version by Seth Coelen https://github.com/whatsnewsaes
+*/
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
@@ -261,7 +270,7 @@ button {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555555;
+  color: #d9cb9e;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -282,7 +291,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555555;
+  color: #d9cb9e;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -299,42 +308,42 @@ input[type="button"] {
 }
 .button:hover,
 button:hover {
-  color: #333333;
-  border-color: #888888;
+  color: #1e1e20;
+  border-color: #707078;
   outline: 0;
 }
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-  color: #333333;
-  border-color: #888888;
+  color: #1e1e20;
+  border-color: #707078;
   outline: 0;
 }
 .button:focus,
 button:focus {
-  color: #333333;
-  border-color: #888888;
+  color: #1e1e20;
+  border-color: #707078;
   outline: 0;
 }
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333333;
-  border-color: #888888;
+  color: #1e1e20;
+  border-color: #707078;
   outline: 0;
 }
 .button.button-primary,
 button.button-primary {
   color: #fff;
-  background-color: #33c3f0;
-  border-color: #33c3f0;
+  background-color: #dc3522;
+  border-color: #dc3522;
 }
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #fff;
-  background-color: #33c3f0;
-  border-color: #33c3f0;
+  background-color: #dc3522;
+  border-color: #dc3522;
 }
 .button.button-primary:hover,
 button.button-primary:hover {
@@ -417,12 +426,12 @@ input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus {
-  border: 1px solid #33c3f0;
+  border: 1px solid #dc3522;
   outline: 0;
 }
 textarea:focus,
 select:focus {
-  border: 1px solid #33c3f0;
+  border: 1px solid #dc3522;
   outline: 0;
 }
 label,
@@ -478,8 +487,8 @@ code {
   margin: 0 .2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: #f1f1f1;
-  border: 1px solid #e1e1e1;
+  background: #465351;
+  border: 1px solid #374140;
   border-radius: 4px;
 }
 pre > code {
@@ -493,7 +502,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid #374140;
 }
 th:first-child,
 td:first-child {
@@ -548,7 +557,7 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid #374140;
 }
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
