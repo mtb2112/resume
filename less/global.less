@@ -1,5 +1,6 @@
 @import './_variables';
 @import './lesshat';
+@import './_mixins';
 
 body {
     margin: 0;
@@ -50,7 +51,11 @@ body {
         font-size: 3em;
         padding-right: 2px;
         padding-top: 20px;
-        animation-name: animationName;
+        .aanimation(fade-in 0.2s linear infinite alternate);
     }
 }
-.keyframes(~'animationName, 0%{ transform: scale(1.5); color: blue; } 100%{ transform: scale(2); color: red }');
+
+.kkeyframes(fade-in;{
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        });
