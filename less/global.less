@@ -1,6 +1,8 @@
 @import './_variables';
 @import './lesshat';
 @import './_mixins';
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Sanchez);
 
 body {
     margin: 0;
@@ -8,19 +10,10 @@ body {
 
 .profile-banner {
     background: no-repeat center right fixed url(../images/banner-background.jpg);
-    -webkit-background-size: 100%;
-    background-size: 100%;
-    -webkit-background-size: cover;
-    background-size: cover;
     margin-bottom: 0;
     padding: 0;
-
-    .container {
-        position: relative;
-        top: 28%;
-        z-index: 4;
-        text-align: center;
-    }
+    .background-size(100%);
+    .background-size(cover);
 
     .photo-overlay {
         background-color: @primary-color;
@@ -29,9 +22,15 @@ body {
         bottom: 0;
         left: 0;
         right: 0;
-        opacity: .55;
-        filter: alpha(opacity=55);
+        .opacity(.50);
         z-index: 2;
+    }
+
+    .container {
+        position: relative;
+        top: 35%;
+        z-index: 4;
+        text-align: center;
     }
 
     .scroll-down {
@@ -44,6 +43,16 @@ body {
         background-color: @med-grey;
         text-align: center;
         z-index: 6;
+        text-decoration: none;
+
+        &:before {
+            content: "\f149";
+            font-size: 3em;
+            position: absolute;
+            top: 20px;
+            color: @white;
+            .animate(fade-out-expand 1s linear infinite normal);
+        }
     }
 
     .fa-level-down {
@@ -51,11 +60,64 @@ body {
         font-size: 3em;
         padding-right: 2px;
         padding-top: 20px;
-        .aanimation(fade-in 0.2s linear infinite alternate);
+    }
+
+    .author {
+        font-family: @font-heading;
+        font-size: 6.5em;
+        color: @white;
+        padding-bottom: 20px;
+        border-bottom: 1px solid @light-blue;
+        display: inline-block;
+        text-shadow: 3px 3px @light-blue;
+    }
+
+    .sub {
+        color: @white;
+        font-size: 1.9em;
     }
 }
 
-.kkeyframes(fade-in;{
-        0% { opacity: 0; }
-        100% { opacity: 1; }
+.navbar {
+    background-color: @dark-grey;
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 110px;
+    z-index: 999;
+}
+
+.menu {
+    &-link {
+        color: @white;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        padding-top: 30px;
+        font-weight: 600;
+        height: 80px;
+    }
+
+    &-item {
+        display: block;
+        float: none;
+        height: 80px;
+    }
+
+    &-item.active {
+        background-color: @primary-color;
+    }
+}
+
+.fixed {
+    .navbar {
+        position: fixed;
+        top: 60px;
+    }
+}
+
+.keyframe(fade-out-expand;{
+        0% { opacity: 1; transform: scale(1, 1) }
+        50% { opacity: 0; transform: scale(2.5, 2.5) }
+        100% { opacity: 0; transform: scale(2.5, 2.5) }
         });

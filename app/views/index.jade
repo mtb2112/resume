@@ -13,15 +13,19 @@ html
                 h1.author Paul Guardino
                 p.sub Interactive Resume
             div.photo-overlay
-            a.scroll-down(href='#profile')
+            a.scroll-down.fa(href='#profile')
                 i.fa.fa-level-down
         nav.navbar.navbar-default#navbar-example(role='navigation')
             div.main-nav
                 ul.nav.navbar-nav
-                    li.active Profile
-                    li Experience
-                    li Skills
-                    li Contact
+                    li.menu-item.active
+                        a.menu-link(href='#profile') Profile
+                    li.menu-item
+                        a.menu-link(href='#experience') Experience
+                    li.menu-item
+                        a.menu-link(href='#skills') Skills
+                    li.menu-item
+                        a.menu-link(href='#contact') Contact
         div.profile-background
             div#profile.container
                 h2 Profile

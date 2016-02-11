@@ -3,6 +3,7 @@ var lnStickyNavigation;
 $(document).ready(function() {
     applyHeader();
     applyResize();
+    applyNavigation();
 });
 
 function applyHeader() {
@@ -18,6 +19,29 @@ function applyResize() {
 
 function applyStickyNavigation() {
     lnStickyNavigation = $('.scroll-down').offset().top + 20;
+    $(window).on('scroll', function() {
+        stickyNavigation();
+    });
+
+    stickyNavigation();
+}
+
+function stickyNavigation() {
+    if($(window).scrollTop() > lnStickyNavigation) {
+        $('body').addClass('fixed');
+    }
+    else {
+        $('body').removeClass('fixed');
+    }
+}
+
+function applyNavigation() {
+    applyStickyNavigation();
+}
+
+function applyStickyNavigation() {
+    lnStickyNavigation = $('.scroll-down').offset().top + 20;
+
     $(window).on('scroll', function() {
         stickyNavigation();
     });

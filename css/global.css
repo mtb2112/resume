@@ -1,31 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Sanchez);
 body {
   margin: 0;
 }
 .profile-banner {
   background: no-repeat center right fixed url(../images/banner-background.jpg);
-  -webkit-background-size: 100%;
-  background-size: 100%;
-  -webkit-background-size: cover;
-  background-size: cover;
   margin-bottom: 0;
   padding: 0;
-}
-.profile-banner .container {
-  position: relative;
-  top: 28%;
-  z-index: 4;
-  text-align: center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 .profile-banner .photo-overlay {
-  background-color: #dc3522;
+  background-color: #004156;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: .55;
-  filter: alpha(opacity=55);
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
   z-index: 2;
+}
+.profile-banner .container {
+  position: relative;
+  top: 35%;
+  z-index: 4;
+  text-align: center;
 }
 .profile-banner .scroll-down {
   height: 80px;
@@ -37,37 +44,105 @@ body {
   background-color: #2a2c2b;
   text-align: center;
   z-index: 6;
+  text-decoration: none;
+}
+.profile-banner .scroll-down:before {
+  content: "\f149";
+  font-size: 3em;
+  position: absolute;
+  top: 20px;
+  color: #ffffff;
+  -webkit-animation: fade-out-expand 1s linear infinite normal;
+  -moz-animation: fade-out-expand 1s linear infinite normal;
+  animation: fade-out-expand 1s linear infinite normal;
 }
 .profile-banner .fa-level-down {
   color: #ffffff;
   font-size: 3em;
   padding-right: 2px;
   padding-top: 20px;
-  -webkit-animation: fade-in 0.2s linear infinite alternate;
-  -moz-animation: fade-in 0.2s linear infinite alternate;
-  animation: fade-in 0.2s linear infinite alternate;
 }
-@-moz-keyframes fade-in {
+.profile-banner .author {
+  font-family: 'Righteous', cursive;
+  font-size: 6.5em;
+  color: #ffffff;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #94cfe1;
+  display: inline-block;
+  text-shadow: 3px 3px #94cfe1;
+}
+.profile-banner .sub {
+  color: #ffffff;
+  font-size: 1.9em;
+}
+.navbar {
+  background-color: #1e1e20;
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  width: 110px;
+  z-index: 999;
+}
+.menu-link {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: 600;
+  height: 80px;
+}
+.menu-item {
+  display: block;
+  float: none;
+  height: 80px;
+}
+.menu-item.active {
+  background-color: #004156;
+}
+.fixed .navbar {
+  position: fixed;
+  top: 60px;
+}
+@-moz-keyframes fade-out-expand {
   0% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  50% {
     opacity: 0;
+    transform: scale(2.5, 2.5);
   }
   100% {
-    opacity: 1;
+    opacity: 0;
+    transform: scale(2.5, 2.5);
   }
 }
-@-webkit-keyframes fade-in {
+@-webkit-keyframes fade-out-expand {
   0% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  50% {
     opacity: 0;
+    transform: scale(2.5, 2.5);
   }
   100% {
-    opacity: 1;
+    opacity: 0;
+    transform: scale(2.5, 2.5);
   }
 }
-@keyframes fade-in {
+@keyframes fade-out-expand {
   0% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  50% {
     opacity: 0;
+    transform: scale(2.5, 2.5);
   }
   100% {
-    opacity: 1;
+    opacity: 0;
+    transform: scale(2.5, 2.5);
   }
 }

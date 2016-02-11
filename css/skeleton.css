@@ -177,7 +177,7 @@ body {
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Sanchez', serif;
   color: #222222;
 }
 /* Typography
@@ -326,15 +326,15 @@ input[type="button"]:focus {
 .button.button-primary,
 button.button-primary {
   color: #fff;
-  background-color: #dc3522;
-  border-color: #dc3522;
+  background-color: #004156;
+  border-color: #004156;
 }
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #fff;
-  background-color: #dc3522;
-  border-color: #dc3522;
+  background-color: #004156;
+  border-color: #004156;
 }
 .button.button-primary:hover,
 button.button-primary:hover {
@@ -417,12 +417,12 @@ input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus {
-  border: 1px solid #dc3522;
+  border: 1px solid #004156;
   outline: 0;
 }
 textarea:focus,
 select:focus {
-  border: 1px solid #dc3522;
+  border: 1px solid #004156;
   outline: 0;
 }
 label,
@@ -447,7 +447,7 @@ label > .label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle inside;
+  list-style: none;
 }
 ol {
   list-style: decimal inside;
@@ -467,9 +467,6 @@ ol ol,
 ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%;
-}
-li {
-  margin-bottom: 1rem;
 }
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
