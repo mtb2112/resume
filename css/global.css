@@ -3,6 +3,12 @@
 body {
   margin: 0;
 }
+h4 {
+  font-weight: 600;
+}
+.container {
+  padding: 40px 0;
+}
 .profile-banner {
   background: no-repeat center right fixed url(../images/banner-background.jpg);
   margin-bottom: 0;
@@ -30,7 +36,7 @@ body {
 }
 .profile-banner .container {
   position: relative;
-  top: 35%;
+  top: 40%;
   z-index: 4;
   text-align: center;
 }
@@ -74,6 +80,27 @@ body {
 .profile-banner .sub {
   color: #ffffff;
   font-size: 1.9em;
+}
+.profile-photo {
+  width: 246px;
+  height: 246px;
+  position: relative;
+  top: 7px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}
+.profile-photo-wrap {
+  display: inline-block;
+  position: relative;
+  width: 260px;
+  height: 260px;
+  background: #94cfe1;
+  box-sizing: border-box;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}
+.nav {
+  margin-bottom: 0;
 }
 .navbar {
   background-color: #1e1e20;
@@ -145,4 +172,65 @@ body {
     opacity: 0;
     transform: scale(2.5, 2.5);
   }
+}
+.section-heading {
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  font-size: 3.6em;
+  color: #94cfe1;
+  text-shadow: 2px 2px #004156;
+}
+.sub,
+.text-center {
+  text-align: center;
+}
+.sub {
+  font-size: 1.2em;
+  color: #374140;
+}
+.row {
+  padding: 20px 0;
+}
+.sub-heading {
+  color: #94cfe1;
+}
+.experience-full {
+  background: #c49539;
+}
+.experience strong {
+  display: block;
+}
+.experience-information {
+  display: block;
+  color: #94cfe1;
+}
+.experience-location {
+  font-family: 'Sanchez', serif;
+  border-right: 1px solid #94cfe1;
+  padding-right: 8px;
+}
+.experience-link a {
+  font-family: 'Sanchez', serif;
+  padding-left: 8px;
+  text-decoration: none;
+  color: #94cfe1;
+}
+.experience-link a:hover {
+  text-decoration: underline;
+  color: #dc3522;
+}
+.fa-map-marker:before {
+  font-size: 1.5em;
+  padding-right: 8px;
+}
+.fa-external-link {
+  padding-left: 8px;
+  font-family: 'Sanchez', serif;
+}
+.skill-title,
+.skill-level {
+  display: inline-block;
+}
+.skill-title {
+  width: 60%;
 }
