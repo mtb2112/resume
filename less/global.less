@@ -13,7 +13,7 @@ h4 {
 }
 
 .container {
-    padding:40px 0;
+    padding:40px 180px;
 }
 
 .profile {
@@ -88,23 +88,8 @@ h4 {
     }
 
     &-photo {
-        width: 246px;
-        height: 246px;
-        position: relative;
-        top: 7px;
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
-
-        &-wrap {
-            display: inline-block;
-            position: relative;
-            width: 260px;
-            height: 260px;
-            background: @light-blue;
-            box-sizing: border-box;
-            -webkit-clip-path: circle(50% at 50% 50%);
-            clip-path: circle(50% at 50% 50%);
-        }
+        border: 5px solid @light-blue;
+        .border-radius(130px);
     }
 }
 
@@ -241,5 +226,37 @@ h4 {
 
     &-title {
         width: 60%;
+    }
+}
+
+.contact {
+    &-background {
+        background-color: @med-grey;
+        padding-bottom: 250px;
+
+        a {
+            color: @light-blue;
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: inline-block;
+
+            &:hover {
+                color: @link-color;
+            }
+        }
+
+        .fa {
+            font-size: 2em;
+        }
+
+        span {
+            padding-left: 10px;
+            font-size: 1.2em;
+            vertical-align: text-bottom;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
