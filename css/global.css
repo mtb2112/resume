@@ -225,6 +225,15 @@ h4 {
 .skill-title {
   width: 60%;
 }
+.skill-level {
+  float: right;
+}
+.abilities-background li {
+  padding: 3px 0;
+}
+.abilities-background li:hover {
+  background: #d2d8d8;
+}
 .contact-background {
   background-color: #2a2c2b;
   padding-bottom: 250px;
