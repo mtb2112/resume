@@ -1,5 +1,17 @@
 module.exports = function(grunt) {
     grunt.initConfig({
+        config: {
+            app: {
+                root: "app/",
+                js: "js/",
+                less: "app/less/",
+                img: "images/",
+                css: "css/",
+                jade: "app/views/",
+                svg: "app/svgs/",
+            }
+        },
+
         less: {
             development: {
                 options: {
@@ -9,8 +21,8 @@ module.exports = function(grunt) {
                     dumpLineNumbers: 'false'
                 },
                 files: {
-                    "css/skeleton.css": "less/skeleton.less",
-                    "css/global.css": "less/global.less"
+                    "<%= config.app.css %>skeleton.css": "<%= config.app.less %>skeleton.less",
+                    "<%= config.app.css %>global.css": "<%= config.app.less %>global.less"
                 }
             }
         },
@@ -20,7 +32,7 @@ module.exports = function(grunt) {
                 livereload: false,
             },
             styles: {
-                files: ['less/**/*.less', 'app/views/**/*.jade', 'app/svgs/*.svg'], // which files to watch
+                files: ['<%= config.app.less %>**/*.less', '<%= config.app.jade %>**/*.jade', '<%= config.app.svgs %>*.svg'], // which files to watch
                 tasks: ['less', 'jade', 'svgstore'],
                 options: {
                     nospawn: true
@@ -34,7 +46,7 @@ module.exports = function(grunt) {
                     pretty: true,
                 },
                 files: {
-                    'index.html' : 'app/views/index.jade'
+                    'index.html' : '<%= config.app.jade %>index.jade'
                 }
             }
         },
@@ -42,7 +54,7 @@ module.exports = function(grunt) {
         svgstore: {
             options: {
                 prefix: "shape-",
-                cleanup: false,
+                viewBox: '0 0 32 32',
                 svg: {
                     style: "display: none;"
                 }
@@ -50,6 +62,38 @@ module.exports = function(grunt) {
             default: {
                 files: {
                     "images/svg-defs.svg": ["app/svgs/*.svg"]
+                }
+            }
+        },
+
+        svg_sprite: {
+            icons: {
+                expand: true,
+                cwd: "<%= config.app.svgs %>",
+                src: [ "*.svg" ],
+                dest: "<%= config.app.img %>",
+                options: {
+                    shape: {
+                        dimension: {
+                            maxWidth: 138,
+                            maxHeight: 24,
+                            precision: 1
+                        }
+                    },
+                    svg: {
+                        padding: 20,
+                        dimenstionAttributes: true
+                    },
+                    mode: {
+                        view: {
+                            prefix: "@ico-%s",
+                            bust: true,
+                            sprite: "icons.sprite.svg",
+                            dest: "<%= config.app.img %>",
+                            common: "sprite",
+                            dimenstions: true
+                        }
+                    }
                 }
             }
         }
