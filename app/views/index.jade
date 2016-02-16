@@ -8,6 +8,7 @@ html
         link(rel='stylesheet', href='#{cssRoot}/global.css')
         link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
     body(data-spy="scroll", data-target=".navbar")
+        include ../../images/svg-defs.svg
         div#top.profile-banner(data-position='center right')
             div.container
                 h1.author Paul Guardino
@@ -141,11 +142,8 @@ html
                             li
                                 span.skill-title CSS
                                 span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
+                                    svg(width="70", height="20" )
+                                        use(xlink:href="#shape-two-star")
                             li
                                 span.skill-title HTML
                                 span.skill-level

@@ -54,51 +54,20 @@ module.exports = function(grunt) {
         svgstore: {
             options: {
                 prefix: "shape-",
-                viewBox: '0 0 32 32',
+                cleanup: false,
+                inheritviewbox: true,
                 svg: {
                     style: "display: none;"
                 }
             },
             default: {
                 files: {
-                    "images/svg-defs.svg": ["app/svgs/*.svg"]
-                }
-            }
-        },
-
-        svg_sprite: {
-            icons: {
-                expand: true,
-                cwd: "<%= config.app.svgs %>",
-                src: [ "*.svg" ],
-                dest: "<%= config.app.img %>",
-                options: {
-                    shape: {
-                        dimension: {
-                            maxWidth: 138,
-                            maxHeight: 24,
-                            precision: 1
-                        }
-                    },
-                    svg: {
-                        padding: 20,
-                        dimenstionAttributes: true
-                    },
-                    mode: {
-                        view: {
-                            prefix: "@ico-%s",
-                            bust: true,
-                            sprite: "icons.sprite.svg",
-                            dest: "<%= config.app.img %>",
-                            common: "sprite",
-                            dimenstions: true
-                        }
-                    }
+                    "<%= config.app.img %>svg-defs.svg": ["<%= config.app.svg %>*.svg"]
                 }
             }
         }
     });
 
     require('load-grunt-tasks')(grunt);
-    grunt.registerTask('default', ['less', 'watch', 'jade', 'svgstore']);
+    grunt.registerTask('default', ['less', 'jade', 'svgstore', 'watch']);
 };
