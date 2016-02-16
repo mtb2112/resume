@@ -44,6 +44,9 @@ module.exports = function(grunt) {
             compile: {
                 options: {
                     pretty: true,
+                    data: function(dest, src) {
+                        return require('./app/json/data.json');
+                    }
                 },
                 files: {
                     'index.html' : '<%= config.app.jade %>index.jade'

@@ -1,0 +1,60 @@
+{
+    "resume": {
+        "user": {
+            "name": "Paul Guardino",
+            "resumeTitle": "Interactive Resume",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "age": "34",
+            "location": "Phoenixville, Pennsylvania"
+        },
+        "educationTimeline": [
+            {
+                "company" : "Philadelphia University",
+                "start" : "September 2005",
+                "end" : "May 2009",
+                "position" : "Bachelor's Degree - Digital Design",
+                "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "location" : "Philadelphia, Pennsylvania",
+                "url" : "http://www.philau.edu"
+            },
+            {
+                "company" : "Methacton",
+                "start" : "September 1995",
+                "end" : "June 1999",
+                "position" : "High School Diploma",
+                "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "location" : "Eagleville, Pennsylvania",
+                "url" : "http://www.methacton.org/Domain/54"
+            }
+        ],
+        "workTimeline": [
+            {
+                "company" : "Ebay Enterprise",
+                "start" : "February 2012",
+                "end" : "current",
+                "position" : "Fulltime - Front-End Web Engineer",
+                "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "location" : "King of Prussia, Pennsylvania",
+                "url" : "http://www.ebayenterprise.com"
+            },
+            {
+                "company" : "QVC",
+                "start" : "November 2009",
+                "end" : "December 2011",
+                "position" : "Fulltime - Web Production",
+                "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "location" : "West Chester, Pennsylvania",
+                "url" : "http://www.qvc.com"
+            },
+            {
+                "company" : "Red Tettemer",
+                "start" : "June 2009",
+                "end" : "September 2011",
+                "position" : "Internship - Wordpress Developer",
+                "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "location" : "Philadelphia, Pennsylvania",
+                "url" : "http://www.rtop.com"
+            }
+        ]
+    }
+}
