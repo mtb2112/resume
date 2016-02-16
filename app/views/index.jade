@@ -99,117 +99,20 @@ html
                 div.row
                     div.one-half.column
                         ul
-                            li
-                                span.skill-title CSS
-                                span.skill-level
-                                    svg(width="70", height="20" )
-                                        use(xlink:href="#shape-five-star")
-                            li
-                                span.skill-title HTML
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title JSON
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title PHP
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title XML
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title Bootstrap
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title Command Line
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
+                            each skill, i in resume.skillsLeft
+                                li
+                                    span.skill-title #{skill.name}
+                                    span.skill-level
+                                        svg(width="70", height="20" )
+                                            use(xlink:href="#shape-#{skill.level}-star")
                     div.one-half.column
                         ul
-                            li
-                                span.skill-title CSS
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title HTML
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title JSON
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title PHP
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title XML
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title Bootstrap
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title Command Line
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
+                            each skill, i in resume.skillsRight
+                                li
+                                    span.skill-title #{skill.name}
+                                    span.skill-level
+                                        svg(width="70", height="20" )
+                                            use(xlink:href="#shape-#{skill.level}-star")
                 div.project-source.text-center
                     p This project is powered by JADE, GRUNT and LESS
                     a.button.button-primary(href='http://github.com/mtb2112/resume', title="View on GitHub", target='_blank') View on Github
@@ -218,104 +121,20 @@ html
                 div.row
                     div.one-half.column
                         ul
-                            li
-                                span.skill-title Sublime Text
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title Powershell
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title Git
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title Adobe Photoshop
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title XAMPP
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title Subversion
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
+                            each tool, i in resume.toolsLeft
+                                li
+                                    span.skill-title #{tool.name}
+                                    span.skill-level
+                                        svg(width="70", height="20" )
+                                            use(xlink:href="#shape-#{tool.level}-star")
                     div.one-half.column
                         ul
-                            li
-                                span.skill-title Sublime Text
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title Powershell
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title Git
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title Adobe Photoshop
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title XAMPP
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                            li
-                                span.skill-title Subversion
-                                span.skill-level
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
-                                    i.fa.fa-star
+                            each tool, i in resume.toolsRight
+                                li
+                                    span.skill-title #{tool.name}
+                                    span.skill-level
+                                        svg(width="70", height="20" )
+                                            use(xlink:href="#shape-#{tool.level}-star")
         div.contact-background
             div#contact.container
                 h2.section-heading Contact

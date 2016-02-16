@@ -55,6 +55,86 @@
                 "location" : "Philadelphia, Pennsylvania",
                 "url" : "http://www.rtop.com"
             }
+        ],
+        "skillsLeft": [
+            {
+                "name" : "CSS",
+                "level" : "five"
+            },
+            {
+                "name" : "HTML",
+                "level" : "four"
+            },
+            {
+                "name" : "JSON",
+                "level" : "three"
+            }
+        ],
+        "skillsRight": [
+            {
+                "name" : "CSS",
+                "level" : "five"
+            },
+            {
+                "name" : "HTML",
+                "level" : "four"
+            },
+            {
+                "name" : "JSON",
+                "level" : "three"
+            }
+        ],
+        "toolsLeft": [
+            {
+                "name" : "Sublime Text",
+                "level" : "five"
+            },
+            {
+                "name" : "Powershell",
+                "level" : "four"
+            },
+            {
+                "name" : "Git",
+                "level" : "three"
+            }
+        ],
+        "toolsRight": [
+            {
+                "name" : "Sublime Text",
+                "level" : "five"
+            },
+            {
+                "name" : "Powershell",
+                "level" : "four"
+            },
+            {
+                "name" : "Git",
+                "level" : "three"
+            }
+        ],
+        "contactLinksLeft": [
+            {
+                "name" : "LinkedIn",
+                "link" : "http://www.linkedin.com/in/paulguardino",
+                "class" : "linkedin-square"
+            },
+            {
+                "name" : "GitHub",
+                "link" : "http://github.com/mtb2112",
+                "class" : "github"
+            }
+        ],
+        "contactLinksRight": [
+            {
+                "name" : "guardinopaul@gmail.com",
+                "link" : "mailto:guardinopaul@gmail.com",
+                "class" : "reply"
+            },
+            {
+                "name" : "Instagram",
+                "link" : "http://www.instagram.com/guardinopaul",
+                "class" : "instagram"
+            }
         ]
     }
 }
