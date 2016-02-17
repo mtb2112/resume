@@ -21,7 +21,6 @@ module.exports = function(grunt) {
                     dumpLineNumbers: 'false'
                 },
                 files: {
-                    "<%= config.app.css %>skeleton.css": "<%= config.app.less %>skeleton.less",
                     "<%= config.app.css %>global.css": "<%= config.app.less %>global.less"
                 }
             }
