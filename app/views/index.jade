@@ -4,7 +4,7 @@ html
         title #{resume.user.title}
         - var cssRoot = 'css';
         - var jsRoot = 'js';
-        link(rel='stylesheet', href='#{cssRoot}/skeleton.css')
+        link(rel='stylesheet', href='#{cssRoot}/gridiculous.css')
         link(rel='stylesheet', href='#{cssRoot}/normalize.css')
         link(rel='stylesheet', href='#{cssRoot}/global.css')
         link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
@@ -23,18 +23,18 @@ html
                     each section, i in resume.sections
                         li.menu-item
                             a.menu-link(href='##{section.name}') #{section.name}
-        div#profile.container
+        div#profile.grid
             h2.section-heading Profile
             p.sub
             hr
             div.row
-                div.one-third.column
+                div.c4
                     h3.sub-heading About Me
                     p #{resume.user.description}
-                div.one-third.column.text-center
+                div.c4.text-center
                     div.profile-photo-wrap
                         img.profile-photo(src='images/guardinopaul.jpg', alt='Paul Guardino')
-                div.one-third.column
+                div.c4.end
                     h3.sub-heading Details
                     p
                         strong Name:
@@ -49,17 +49,17 @@ html
                         br
                         |#{resume.user.location}
         div.experience-full
-            div#experience.container
+            div#experience.grid
                 h2.section-heading Experiences
                 hr
                 h3.sub-heading Education
                 div.experiences
                     each role, i in resume.educationTimeline
                         div.experience.row
-                            div.four.columns
+                            div.c4
                                 h4 #{role.company}
                                 p.experience-duration #{role.start} - #{role.end}
-                            div.eight.columns
+                            div.c8
                                 p
                                     strong #{role.position}
                                     span.experience-description #{role.description}
@@ -74,10 +74,10 @@ html
                 div.experiences
                     each role, i in resume.workTimeline
                         div.experience.row
-                            div.four.columns
+                            div.c4
                                 h4 #{role.company}
                                 p.experience-duration #{role.start} - #{role.end}
-                            div.eight.columns
+                            div.c8
                                 p
                                     strong #{role.position}
                                     span.experience-description #{role.description}
@@ -88,12 +88,12 @@ html
                                             span.experience-link
                                                 a(href='#{role.url}', target='_blank') #{role.url}
         div.abilities-background
-            div#abilities.container
+            div#abilities.grid
                 h2.section-heading Abilities
                 hr
                 h3.sub-heading Skills
                 div.row
-                    div.one-half.column
+                    div.c6
                         ul
                             each skill, i in resume.skillsLeft
                                 li
@@ -101,7 +101,7 @@ html
                                     span.skill-level
                                         svg(width="70", height="20" )
                                             use(xlink:href="#shape-#{skill.level}-star")
-                    div.one-half.column
+                    div.c6
                         ul
                             each skill, i in resume.skillsRight
                                 li
@@ -115,7 +115,7 @@ html
                 hr
                 h3.sub-heading Tools
                 div.row
-                    div.one-half.column
+                    div.c6
                         ul
                             each tool, i in resume.toolsLeft
                                 li
@@ -123,7 +123,7 @@ html
                                     span.skill-level
                                         svg(width="70", height="20" )
                                             use(xlink:href="#shape-#{tool.level}-star")
-                    div.one-half.column
+                    div.c6
                         ul
                             each tool, i in resume.toolsRight
                                 li
@@ -132,11 +132,11 @@ html
                                         svg(width="70", height="20" )
                                             use(xlink:href="#shape-#{tool.level}-star")
         div.contact-background
-            div#contact.container
+            div#contact.grid
                 h2.section-heading Contact
                 hr
                 div.row
-                    div.one-half.column
+                    div.c6
                         ul
                             li
                                 a(href='http://www.linkedin.com/in/paulguardino', title='Linkedin', target='_blank')
@@ -146,7 +146,7 @@ html
                                 a(href='http://github.com/mtb2112', title='GitHub', target='_blank')
                                     i.fa.fa-github
                                     span GitHub
-                    div.one-half.column
+                    div.c6
                         ul
                             li
                                 a(href='mailto:guardinopaul@gmail.com', title='E-mail')
