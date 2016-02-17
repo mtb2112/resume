@@ -19,14 +19,9 @@ html
         nav.navbar.navbar-default#navbar-example(role='navigation')
             div.main-nav
                 ul.nav.navbar-nav
-                    li.menu-item.active
-                        a.menu-link(href='#profile') Profile
-                    li.menu-item
-                        a.menu-link(href='#experience') Experience
-                    li.menu-item
-                        a.menu-link(href='#abilities') Abilities
-                    li.menu-item
-                        a.menu-link(href='#contact') Contact
+                    each section, i in resume.sections
+                        li.menu-item.active
+                            a.menu-link(href='##{section.name}') #{section.name}
         div#profile.container
             h2.section-heading Profile
             p.sub

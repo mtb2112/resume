@@ -7,6 +7,12 @@
             "age": "34",
             "location": "Phoenixville, Pennsylvania"
         },
+        "sections" : [
+            { "name" : "profile" },
+            { "name" : "experience" },
+            { "name" : "abilities" },
+            { "name" : "contact" }
+        ],
         "educationTimeline": [
             {
                 "company" : "Philadelphia University",

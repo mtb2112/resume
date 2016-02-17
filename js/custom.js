@@ -4,6 +4,7 @@ $(document).ready(function() {
     applyHeader();
     applyResize();
     applyNavigation();
+    scrollNav();
 });
 
 function applyHeader() {
@@ -38,4 +39,14 @@ function stickyNavigation() {
     else {
         $('body').removeClass('fixed');
     }
+}
+
+function scrollNav() {
+    $('.nav a, .profile-banner a').click(function(){
+        $('html, body').stop().animate({
+            scrollTop: $( $(this).attr('href') ).offset().top - 0
+        }, 400);
+        return false;
+    });
+    $('.scrollTop a').scrollTop();
 }
