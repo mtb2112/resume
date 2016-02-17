@@ -1,0 +1,25 @@
+div#profile.container
+            h2.section-heading Profile
+            p.sub
+            hr
+            div.row
+                div.one-third.column
+                    h3.sub-heading About Me
+                    p #{resume.user.description}
+                div.one-third.column.text-center
+                    div.profile-photo-wrap
+                        img.profile-photo(src='images/guardinopaul.jpg', alt='Paul Guardino')
+                div.one-third.column
+                    h3.sub-heading Details
+                    p
+                        strong Name:
+                        br
+                        | #{resume.user.name}
+                        br
+                        strong Age:
+                        br
+                        |#{resume.user.age}
+                        br
+                        strong Location:
+                        br
+                        |#{resume.user.location}

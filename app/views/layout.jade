@@ -1,0 +1,10 @@
+doctype html
+html
+    head
+        title #{resume.user.title}
+        - var cssRoot = 'css';
+        - var jsRoot = 'js';
+        block css
+    body(data-spy="scroll", data-target=".navbar")
+        include ../../images/svg-defs.svg
+        block banner
