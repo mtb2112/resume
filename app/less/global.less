@@ -8,10 +8,9 @@ html {
     font-size: 62.5%;
 }
 
-body {
+.global {
     margin: 0;
     font-family: @font-family;
-    font-size: 1.5em;
 }
 
 h1,
@@ -82,7 +81,7 @@ ol ul {
   font-size: 90%;
 }
 
-.grid {
+.container {
     padding:40px 180px;
 }
 
@@ -119,6 +118,90 @@ button {
   border: 1px solid @border-color;
   cursor: pointer;
   box-sizing: border-box;
+}
+
+.fixed {
+    .navbar {
+        position: fixed;
+        top: 60px;
+    }
+}
+
+.nav {
+    &bar {
+        border: 0;
+        background-color: @dark-grey;
+        position: absolute;
+        top: 100%;
+        right: 5%;
+        width: 110px;
+        z-index: 999;
+        border-radius: 0;
+
+        &-nav {
+            margin: 0;
+        }
+
+        .navbar-collapse {
+            padding: 0;
+            max-height: none;
+        }
+
+        .navbar-nav {
+            float: none;
+        }
+
+        .nav {
+            li {
+                display: block;
+                float: none;
+                height: 80px;
+                text-align: center;
+            }
+
+            a {
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                padding-top: 30px;
+                font-weight: 600;
+                height: 80px;
+                text-transform: capitalize;
+            }
+        }
+
+        &-default {
+            .navbar-nav {
+                li {
+                    a {
+                        color: @white;
+
+                        &:hover {
+                            color: @link-color;
+                        }
+
+                        &:focus {
+                            color: @white;
+                        }
+                    }
+                }
+                .active {
+                    a {
+                        color: @white;
+                        background-color: @primary-color;
+
+                        &:focus {
+                            color: @white;
+                            background-color: @primary-color;
+                        }
+                    }
+                }
+            }
+        }
+        &-toggle {
+            padding: 3px 10px;
+        }
+    }
 }
 
 .profile {
@@ -198,46 +281,10 @@ button {
     }
 }
 
-.nav {
-    margin-bottom: 0;
-}
-
-.navbar {
-    background-color: @dark-grey;
-    position: absolute;
-    top: 100%;
-    right: 5%;
-    width: 110px;
-    z-index: 999;
-}
-
 .menu {
-    &-link {
-        color: @white;
-        text-decoration: none;
-        display: block;
-        text-align: center;
-        padding-top: 30px;
-        font-weight: 600;
-        height: 80px;
-        text-transform: capitalize;
-    }
-
-    &-item {
-        display: block;
-        float: none;
-        height: 80px;
-    }
 
     &-item.active {
         background-color: @primary-color;
-    }
-}
-
-.fixed {
-    .navbar {
-        position: fixed;
-        top: 60px;
     }
 }
 
@@ -287,12 +334,15 @@ button {
     &-information {
         display: block;
         color: @light-blue;
+
+        .fa {
+            display: block;
+            margin-bottom: 10px;
+        }
     }
 
     &-location {
         font-family: @font-family;
-        border-right: 1px solid @light-blue;
-        padding-right: 8px;
     }
 
     &-link {
@@ -317,10 +367,11 @@ button {
             padding-right: 8px;
         }
     }
-
-    &-external-link {
-        padding-left: 8px;
-        font-family: @font-family;
+    &-bars {
+        &:before {
+            font-size: 2em;
+            color: @white;
+        }
     }
 }
 
@@ -380,5 +431,41 @@ button {
                 text-decoration: underline;
             }
         }
+    }
+}
+
+@media (max-width: 767px) {
+    .profile-banner {
+        .scroll-down {
+            width: 100%;
+            right: 0;
+        }
+    }
+    .navbar {
+        left: 0;
+        width: 100%;
+    }
+
+    .fixed {
+        .navbar {
+            top: 0;
+        }
+    }
+
+    .container {
+        padding: 60px 20px;
+        min-width: 280px;
+    }
+
+    #profile {
+        .row {
+            * {
+                text-align: center;
+            }
+        }
+    }
+
+    .col-md-4 {
+        margin-bottom: 0;
     }
 }

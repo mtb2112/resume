@@ -4,11 +4,10 @@ html
         title #{resume.user.title}
         - var cssRoot = 'css';
         - var jsRoot = 'js';
-        link(rel='stylesheet', href='#{cssRoot}/gridiculous.css')
-        link(rel='stylesheet', href='#{cssRoot}/normalize.css')
+        link(rel='stylesheet', href='#{cssRoot}/bootstrap.min.css')
         link(rel='stylesheet', href='#{cssRoot}/global.css')
         link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
-    body(data-spy="scroll", data-target=".navbar")
+    body.global(data-spy="scroll", data-target=".navbar")
         include ../../images/svg-defs.svg
         div#top.profile-banner(data-position='center right')
             div.container
@@ -18,23 +17,26 @@ html
             a.scroll-down.fa(href='#profile')
                 i.fa.fa-level-down
         nav.navbar.navbar-default#navbar-example(role='navigation')
-            div.main-nav
+            div.navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+                    i.fa.fa-bars
+            div.main-nav.navbar-collapse.navbar-ex1-collapse.collapse
                 ul.nav.navbar-nav
                     each section, i in resume.sections
                         li.menu-item
                             a.menu-link(href='##{section.name}') #{section.name}
-        div#profile.grid
+        div#profile.container
             h2.section-heading Profile
             p.sub
             hr
             div.row
-                div.c4
+                div.col-md-4
                     h3.sub-heading About Me
                     p #{resume.user.description}
-                div.c4.text-center
+                div.col-md-4.text-center
                     div.profile-photo-wrap
                         img.profile-photo(src='images/guardinopaul.jpg', alt='Paul Guardino')
-                div.c4.end
+                div.col-md-4
                     h3.sub-heading Details
                     p
                         strong Name:
@@ -49,17 +51,17 @@ html
                         br
                         |#{resume.user.location}
         div.experience-full
-            div#experience.grid
+            div#experience.container
                 h2.section-heading Experiences
                 hr
                 h3.sub-heading Education
                 div.experiences
                     each role, i in resume.educationTimeline
                         div.experience.row
-                            div.c4
+                            div.col-md-4
                                 h4 #{role.company}
                                 p.experience-duration #{role.start} - #{role.end}
-                            div.c8
+                            div.col-md-8
                                 p
                                     strong #{role.position}
                                     span.experience-description #{role.description}
@@ -74,10 +76,10 @@ html
                 div.experiences
                     each role, i in resume.workTimeline
                         div.experience.row
-                            div.c4
+                            div.col-md-4
                                 h4 #{role.company}
                                 p.experience-duration #{role.start} - #{role.end}
-                            div.c8
+                            div.col-md-8
                                 p
                                     strong #{role.position}
                                     span.experience-description #{role.description}
@@ -88,12 +90,12 @@ html
                                             span.experience-link
                                                 a(href='#{role.url}', target='_blank') #{role.url}
         div.abilities-background
-            div#abilities.grid
+            div#abilities.container
                 h2.section-heading Abilities
                 hr
                 h3.sub-heading Skills
                 div.row
-                    div.c6
+                    div.col-md-6
                         ul
                             each skill, i in resume.skillsLeft
                                 li
@@ -101,7 +103,7 @@ html
                                     span.skill-level
                                         svg(width="70", height="20" )
                                             use(xlink:href="#shape-#{skill.level}-star")
-                    div.c6
+                    div.col-md-6
                         ul
                             each skill, i in resume.skillsRight
                                 li
@@ -115,7 +117,7 @@ html
                 hr
                 h3.sub-heading Tools
                 div.row
-                    div.c6
+                    div.col-md-6
                         ul
                             each tool, i in resume.toolsLeft
                                 li
@@ -123,7 +125,7 @@ html
                                     span.skill-level
                                         svg(width="70", height="20" )
                                             use(xlink:href="#shape-#{tool.level}-star")
-                    div.c6
+                    div.col-md-6
                         ul
                             each tool, i in resume.toolsRight
                                 li
@@ -132,11 +134,11 @@ html
                                         svg(width="70", height="20" )
                                             use(xlink:href="#shape-#{tool.level}-star")
         div.contact-background
-            div#contact.grid
+            div#contact.container
                 h2.section-heading Contact
                 hr
                 div.row
-                    div.c6
+                    div.col-md-6
                         ul
                             li
                                 a(href='http://www.linkedin.com/in/paulguardino', title='Linkedin', target='_blank')
@@ -146,7 +148,7 @@ html
                                 a(href='http://github.com/mtb2112', title='GitHub', target='_blank')
                                     i.fa.fa-github
                                     span GitHub
-                    div.c6
+                    div.col-md-6
                         ul
                             li
                                 a(href='mailto:guardinopaul@gmail.com', title='E-mail')

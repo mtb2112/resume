@@ -3,10 +3,9 @@
 html {
   font-size: 62.5%;
 }
-body {
+.global {
   margin: 0;
   font-family: 'Sanchez', serif;
-  font-size: 1.5em;
 }
 h1,
 h2,
@@ -72,7 +71,7 @@ ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%;
 }
-.grid {
+.container {
   padding: 40px 180px;
 }
 .button.button-primary,
@@ -106,6 +105,65 @@ button {
   border: 1px solid #bbbbbb;
   cursor: pointer;
   box-sizing: border-box;
+}
+.fixed .navbar {
+  position: fixed;
+  top: 60px;
+}
+.navbar {
+  border: 0;
+  background-color: #1e1e20;
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  width: 110px;
+  z-index: 999;
+  border-radius: 0;
+}
+.navbar-nav {
+  margin: 0;
+}
+.navbar .navbar-collapse {
+  padding: 0;
+  max-height: none;
+}
+.navbar .navbar-nav {
+  float: none;
+}
+.navbar .nav li {
+  display: block;
+  float: none;
+  height: 80px;
+  text-align: center;
+}
+.navbar .nav a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: 600;
+  height: 80px;
+  text-transform: capitalize;
+}
+.navbar-default .navbar-nav li a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav li a:hover {
+  color: #dc3522;
+}
+.navbar-default .navbar-nav li a:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav .active a {
+  color: #ffffff;
+  background-color: #004156;
+}
+.navbar-default .navbar-nav .active a:focus {
+  color: #ffffff;
+  background-color: #004156;
+}
+.navbar-toggle {
+  padding: 3px 10px;
 }
 .profile-banner {
   background: no-repeat center right fixed url(../images/banner-background.jpg);
@@ -188,38 +246,8 @@ button {
   border-radius: 130px;
   background-clip: padding-box;
 }
-.nav {
-  margin-bottom: 0;
-}
-.navbar {
-  background-color: #1e1e20;
-  position: absolute;
-  top: 100%;
-  right: 5%;
-  width: 110px;
-  z-index: 999;
-}
-.menu-link {
-  color: #ffffff;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  padding-top: 30px;
-  font-weight: 600;
-  height: 80px;
-  text-transform: capitalize;
-}
-.menu-item {
-  display: block;
-  float: none;
-  height: 80px;
-}
 .menu-item.active {
   background-color: #004156;
-}
-.fixed .navbar {
-  position: fixed;
-  top: 60px;
 }
 @-moz-keyframes fade-out-expand {
   0% {
@@ -294,10 +322,12 @@ button {
   display: block;
   color: #94cfe1;
 }
+.experience-information .fa {
+  display: block;
+  margin-bottom: 10px;
+}
 .experience-location {
   font-family: 'Sanchez', serif;
-  border-right: 1px solid #94cfe1;
-  padding-right: 8px;
 }
 .experience-link a {
   font-family: 'Sanchez', serif;
@@ -313,9 +343,9 @@ button {
   font-size: 1.5em;
   padding-right: 8px;
 }
-.fa-external-link {
-  padding-left: 8px;
-  font-family: 'Sanchez', serif;
+.fa-bars:before {
+  font-size: 2em;
+  color: #ffffff;
 }
 .skill-title,
 .skill-level {
@@ -356,4 +386,27 @@ button {
 }
 .contact-background span:hover {
   text-decoration: underline;
+}
+@media (max-width: 767px) {
+  .profile-banner .scroll-down {
+    width: 100%;
+    right: 0;
+  }
+  .navbar {
+    left: 0;
+    width: 100%;
+  }
+  .fixed .navbar {
+    top: 0;
+  }
+  .container {
+    padding: 60px 20px;
+    min-width: 280px;
+  }
+  #profile .row * {
+    text-align: center;
+  }
+  .col-md-4 {
+    margin-bottom: 0;
+  }
 }

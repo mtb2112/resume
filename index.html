@@ -2,12 +2,11 @@
 <html>
   <head>
     <title>The Resume of Paul Guardino | Front-End Web Developer | Phoenixville, Pennsylvania</title>
-    <link rel="stylesheet" href="css/gridiculous.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
-  <body data-spy="scroll" data-target=".navbar"><svg style="display: none;"><symbol viewBox="0 0 70 20" id="shape-five-star"><title>five-star</title> <polygon fill="#94CFE1" points="6.687,3.037 8.27,7.91 13.396,7.91 9.25,11.011 10.833,15.929 6.687,12.94 2.542,15.963 
+  <body data-spy="scroll" data-target=".navbar" class="global"><svg style="display: none;"><symbol viewBox="0 0 70 20" id="shape-five-star"><title>five-star</title> <polygon fill="#94CFE1" points="6.687,3.037 8.27,7.91 13.396,7.91 9.25,11.011 10.833,15.929 6.687,12.94 2.542,15.963 
 	4.125,11.006 -0.022,7.91 5.104,7.91 "/> <polygon fill="#94CFE1" points="20.934,3.037 22.518,7.91 27.644,7.91 23.498,11.011 25.081,15.929 20.934,12.94 16.79,15.963 
 	18.372,11.006 14.226,7.91 19.351,7.91 "/> <polygon fill="#94CFE1" points="35.183,3.037 36.766,7.91 41.891,7.91 37.746,11.011 39.328,15.929 35.183,12.94 31.037,15.963 
 	32.62,11.006 28.474,7.91 33.6,7.91 "/> <polygon fill="#94CFE1" points="49.43,3.037 51.014,7.91 56.139,7.91 51.994,11.011 53.576,15.929 49.43,12.94 45.285,15.963 
@@ -41,7 +40,10 @@
       <div class="photo-overlay"></div><a href="#profile" class="scroll-down fa"><i class="fa fa-level-down"></i></a>
     </div>
     <nav id="navbar-example" role="navigation" class="navbar navbar-default">
-      <div class="main-nav">
+      <div class="navbar-header">
+        <button type="button" data-toggle="collapse" data-target=".navbar-ex1-collapse" class="navbar-toggle"><i class="fa fa-bars"></i></button>
+      </div>
+      <div class="main-nav navbar-collapse navbar-ex1-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="menu-item"><a href="#profile" class="menu-link">profile</a></li>
           <li class="menu-item"><a href="#experience" class="menu-link">experience</a></li>
@@ -50,45 +52,45 @@
         </ul>
       </div>
     </nav>
-    <div id="profile" class="grid">
+    <div id="profile" class="container">
       <h2 class="section-heading">Profile</h2>
       <p class="sub"></p>
       <hr>
       <div class="row">
-        <div class="c4">
+        <div class="col-md-4">
           <h3 class="sub-heading">About Me</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-        <div class="c4 text-center">
+        <div class="col-md-4 text-center">
           <div class="profile-photo-wrap"><img src="images/guardinopaul.jpg" alt="Paul Guardino" class="profile-photo"></div>
         </div>
-        <div class="c4 end">
+        <div class="col-md-4">
           <h3 class="sub-heading">Details</h3>
           <p><strong>Name:</strong><br>Paul Guardino<br><strong>Age:</strong><br>34<br><strong>Location:</strong><br>Phoenixville, Pennsylvania</p>
         </div>
       </div>
     </div>
     <div class="experience-full">
-      <div id="experience" class="grid">
+      <div id="experience" class="container">
         <h2 class="section-heading">Experiences</h2>
         <hr>
         <h3 class="sub-heading">Education</h3>
         <div class="experiences">
           <div class="experience row">
-            <div class="c4">
+            <div class="col-md-4">
               <h4>Philadelphia University</h4>
               <p class="experience-duration">September 2005 - May 2009</p>
             </div>
-            <div class="c8">
+            <div class="col-md-8">
               <p><strong>Bachelor's Degree - Digital Design</strong><span class="experience-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><span class="experience-information"><i class="fa fa-map-marker"><span class="experience-location">Philadelphia, Pennsylvania</span></i><i class="fa fa-external-link"><span class="experience-link"><a href="http://www.philau.edu" target="_blank">http://www.philau.edu</a></span></i></span></p>
             </div>
           </div>
           <div class="experience row">
-            <div class="c4">
+            <div class="col-md-4">
               <h4>Methacton</h4>
               <p class="experience-duration">September 1995 - June 1999</p>
             </div>
-            <div class="c8">
+            <div class="col-md-8">
               <p><strong>High School Diploma</strong><span class="experience-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><span class="experience-information"><i class="fa fa-map-marker"><span class="experience-location">Eagleville, Pennsylvania</span></i><i class="fa fa-external-link"><span class="experience-link"><a href="http://www.methacton.org/Domain/54" target="_blank">http://www.methacton.org/Domain/54</a></span></i></span></p>
             </div>
           </div>
@@ -97,29 +99,29 @@
         <h3 class="sub-heading">Careers</h3>
         <div class="experiences">
           <div class="experience row">
-            <div class="c4">
+            <div class="col-md-4">
               <h4>Ebay Enterprise</h4>
               <p class="experience-duration">February 2012 - current</p>
             </div>
-            <div class="c8">
+            <div class="col-md-8">
               <p><strong>Fulltime - Front-End Web Engineer</strong><span class="experience-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><span class="experience-information"><i class="fa fa-map-marker"><span class="experience-location">King of Prussia, Pennsylvania</span></i><i class="fa fa-external-link"><span class="experience-link"><a href="http://www.ebayenterprise.com" target="_blank">http://www.ebayenterprise.com</a></span></i></span></p>
             </div>
           </div>
           <div class="experience row">
-            <div class="c4">
+            <div class="col-md-4">
               <h4>QVC</h4>
               <p class="experience-duration">November 2009 - December 2011</p>
             </div>
-            <div class="c8">
+            <div class="col-md-8">
               <p><strong>Fulltime - Web Production</strong><span class="experience-description">Maintained www.qvc.com using InfoPath, implementing HTML, CSS and JavaScript where needed. Built and maintained the commerce site website using IBM Management Center. Main developer for the Fashion meta for all immediate, current and future timed updates. Worked closely with Online Coordinators, Design and Copy teams for website content. Used PeRC to receive and send updates of website content. Attended meetings discussing road blocks and progress on the Commerce build. Assisted other developers with their metas.</span><span class="experience-information"><i class="fa fa-map-marker"><span class="experience-location">West Chester, Pennsylvania</span></i><i class="fa fa-external-link"><span class="experience-link"><a href="http://www.qvc.com" target="_blank">http://www.qvc.com</a></span></i></span></p>
             </div>
           </div>
           <div class="experience row">
-            <div class="c4">
+            <div class="col-md-4">
               <h4>Red Tettemer</h4>
               <p class="experience-duration">June 2009 - September 2011</p>
             </div>
-            <div class="c8">
+            <div class="col-md-8">
               <p><strong>Internship - Wordpress Developer</strong><span class="experience-description">I assisted the interactive team with building out pages from Photoshop comps, helped with Wordpress development and coordinated with account managers and clients.</span><span class="experience-information"><i class="fa fa-map-marker"><span class="experience-location">Philadelphia, Pennsylvania</span></i><i class="fa fa-external-link"><span class="experience-link"><a href="http://www.rtop.com" target="_blank">http://www.rtop.com</a></span></i></span></p>
             </div>
           </div>
@@ -127,12 +129,12 @@
       </div>
     </div>
     <div class="abilities-background">
-      <div id="abilities" class="grid">
+      <div id="abilities" class="container">
         <h2 class="section-heading">Abilities</h2>
         <hr>
         <h3 class="sub-heading">Skills</h3>
         <div class="row">
-          <div class="c6">
+          <div class="col-md-6">
             <ul>
               <li><span class="skill-title">HTML</span><span class="skill-level">
                   <svg width="70" height="20">
@@ -166,10 +168,18 @@
                   <svg width="70" height="20">
                     <use xlink:href="#shape-three-star"></use>
                   </svg></span></li>
+              <li><span class="skill-title">JADE Template Engine</span><span class="skill-level">
+                  <svg width="70" height="20">
+                    <use xlink:href="#shape-three-star"></use>
+                  </svg></span></li>
             </ul>
           </div>
-          <div class="c6">
+          <div class="col-md-6">
             <ul>
+              <li><span class="skill-title">Grunt Task Runner</span><span class="skill-level">
+                  <svg width="70" height="20">
+                    <use xlink:href="#shape-four-star"></use>
+                  </svg></span></li>
               <li><span class="skill-title">Command Line</span><span class="skill-level">
                   <svg width="70" height="20">
                     <use xlink:href="#shape-four-star"></use>
@@ -196,7 +206,7 @@
                   </svg></span></li>
               <li><span class="skill-title">MySQL</span><span class="skill-level">
                   <svg width="70" height="20">
-                    <use xlink:href="#shape-three-star"></use>
+                    <use xlink:href="#shape-two-star"></use>
                   </svg></span></li>
               <li><span class="skill-title">Object Oriented Programming</span><span class="skill-level">
                   <svg width="70" height="20">
@@ -211,7 +221,7 @@
         <hr>
         <h3 class="sub-heading">Tools</h3>
         <div class="row">
-          <div class="c6">
+          <div class="col-md-6">
             <ul>
               <li><span class="skill-title">Sublime Text</span><span class="skill-level">
                   <svg width="70" height="20">
@@ -222,24 +232,56 @@
                     <use xlink:href="#shape-four-star"></use>
                   </svg></span></li>
               <li><span class="skill-title">Git</span><span class="skill-level">
+                  <svg width="70" height="20">
+                    <use xlink:href="#shape-four-star"></use>
+                  </svg></span></li>
+              <li><span class="skill-title">Notepad++</span><span class="skill-level">
+                  <svg width="70" height="20">
+                    <use xlink:href="#shape-four-star"></use>
+                  </svg></span></li>
+              <li><span class="skill-title">Filezilla</span><span class="skill-level">
+                  <svg width="70" height="20">
+                    <use xlink:href="#shape-four-star"></use>
+                  </svg></span></li>
+              <li><span class="skill-title">Webkit Browsers</span><span class="skill-level">
+                  <svg width="70" height="20">
+                    <use xlink:href="#shape-four-star"></use>
+                  </svg></span></li>
+              <li><span class="skill-title">Firefox</span><span class="skill-level">
                   <svg width="70" height="20">
                     <use xlink:href="#shape-three-star"></use>
                   </svg></span></li>
             </ul>
           </div>
-          <div class="c6">
+          <div class="col-md-6">
             <ul>
-              <li><span class="skill-title">Sublime Text</span><span class="skill-level">
-                  <svg width="70" height="20">
-                    <use xlink:href="#shape-five-star"></use>
-                  </svg></span></li>
-              <li><span class="skill-title">Powershell</span><span class="skill-level">
+              <li><span class="skill-title">Subversion</span><span class="skill-level">
                   <svg width="70" height="20">
                     <use xlink:href="#shape-four-star"></use>
                   </svg></span></li>
-              <li><span class="skill-title">Git</span><span class="skill-level">
+              <li><span class="skill-title">XAMPP</span><span class="skill-level">
                   <svg width="70" height="20">
                     <use xlink:href="#shape-three-star"></use>
+                  </svg></span></li>
+              <li><span class="skill-title">MAMP</span><span class="skill-level">
+                  <svg width="70" height="20">
+                    <use xlink:href="#shape-three-star"></use>
+                  </svg></span></li>
+              <li><span class="skill-title">Abobe Photoshop</span><span class="skill-level">
+                  <svg width="70" height="20">
+                    <use xlink:href="#shape-four-star"></use>
+                  </svg></span></li>
+              <li><span class="skill-title">Abobe Illustrator</span><span class="skill-level">
+                  <svg width="70" height="20">
+                    <use xlink:href="#shape-three-star"></use>
+                  </svg></span></li>
+              <li><span class="skill-title">Abobe Fireworks</span><span class="skill-level">
+                  <svg width="70" height="20">
+                    <use xlink:href="#shape-three-star"></use>
+                  </svg></span></li>
+              <li><span class="skill-title">Microsoft Office</span><span class="skill-level">
+                  <svg width="70" height="20">
+                    <use xlink:href="#shape-five-star"></use>
                   </svg></span></li>
             </ul>
           </div>
@@ -247,17 +289,17 @@
       </div>
     </div>
     <div class="contact-background">
-      <div id="contact" class="grid">
+      <div id="contact" class="container">
         <h2 class="section-heading">Contact</h2>
         <hr>
         <div class="row">
-          <div class="c6">
+          <div class="col-md-6">
             <ul>
               <li><a href="http://www.linkedin.com/in/paulguardino" title="Linkedin" target="_blank"><i class="fa fa-linkedin-square"></i><span>LinkedIn</span></a></li>
               <li><a href="http://github.com/mtb2112" title="GitHub" target="_blank"><i class="fa fa-github"></i><span>GitHub</span></a></li>
             </ul>
           </div>
-          <div class="c6">
+          <div class="col-md-6">
             <ul>
               <li><a href="mailto:guardinopaul@gmail.com" title="E-mail"><i class="fa fa-reply"></i><span>guardinopaul@gmail.com</span></a></li>
               <li><a href="http://www.instagram.com/guardinopaul" title="Instagram" target="_blank"><i class="fa fa-instagram"></i><span>Instagram</span></a></li>

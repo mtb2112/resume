@@ -95,9 +95,17 @@
             {
                 "name" : "Wordpress",
                 "level" : "three"
+            },
+            {
+                "name" : "JADE Template Engine",
+                "level" : "three"
             }
         ],
         "skillsRight": [
+            {
+                "name" : "Grunt Task Runner",
+                "level" : "four"
+            },
             {
                 "name" : "Command Line",
                 "level" : "four"
@@ -124,7 +132,7 @@
             },
             {
                 "name" : "MySQL",
-                "level" : "three"
+                "level" : "two"
             },
             {
                 "name" : "Object Oriented Programming",
@@ -142,21 +150,53 @@
             },
             {
                 "name" : "Git",
+                "level" : "four"
+            },
+            {
+                "name" : "Notepad++",
+                "level" : "four"
+            },
+            {
+                "name" : "Filezilla",
+                "level" : "four"
+            },
+            {
+                "name" : "Webkit Browsers",
+                "level" : "four"
+            },
+            {
+                "name" : "Firefox",
                 "level" : "three"
             }
         ],
         "toolsRight": [
             {
-                "name" : "Sublime Text",
-                "level" : "five"
-            },
-            {
-                "name" : "Powershell",
+                "name" : "Subversion",
                 "level" : "four"
             },
             {
-                "name" : "Git",
+                "name" : "XAMPP",
                 "level" : "three"
+            },
+            {
+                "name" : "MAMP",
+                "level" : "three"
+            },
+            {
+                "name" : "Abobe Photoshop",
+                "level" : "four"
+            },
+            {
+                "name" : "Abobe Illustrator",
+                "level" : "three"
+            },
+            {
+                "name" : "Abobe Fireworks",
+                "level" : "three"
+            },
+            {
+                "name" : "Microsoft Office",
+                "level" : "five"
             }
         ],
         "contactLinksLeft": [
