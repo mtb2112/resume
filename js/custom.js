@@ -3,6 +3,7 @@ var lnStickyNavigation;
 $(document).ready(function() {
     applyHeader();
     applyResize();
+    applyMobileNavCollapse();
     applyNavigation();
     scrollNav();
 });
@@ -15,6 +16,12 @@ function applyResize() {
     $(window).on('resize', function() {
         lnStickyNavigation = $('.scroll-down').offset().top + 20;
         $('.profile-banner').css({ height: ($(window).height()) +'px' });
+    });
+}
+
+function applyMobileNavCollapse() {
+    $('.navbar li a').click(function(event) {
+        $('.navbar-collapse').removeClass('in').addClass('collapse');
     });
 }
 
