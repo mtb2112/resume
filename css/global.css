@@ -162,6 +162,10 @@ button {
   color: #ffffff;
   background-color: #004156;
 }
+.navbar-default .navbar-nav .active a:hover {
+  background-color: transparent;
+  color: #dc3522;
+}
 .navbar-toggle {
   padding: 3px 10px;
 }
