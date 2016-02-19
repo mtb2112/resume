@@ -166,6 +166,9 @@ button {
   background-color: transparent;
   color: #dc3522;
 }
+.navbar-default .navbar-collapse {
+  border: none;
+}
 .navbar-toggle {
   padding: 3px 10px;
 }
@@ -342,6 +345,10 @@ button {
 .experience-link a:hover {
   text-decoration: underline;
   color: #dc3522;
+}
+.experience-description {
+  display: block;
+  margin-bottom: 10px;
 }
 .fa-map-marker:before {
   font-size: 1.5em;
