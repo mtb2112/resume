@@ -416,9 +416,19 @@ button {
   vertical-align: text-bottom;
 }
 @media (max-width: 767px) {
+  .profile-banner {
+    background-attachment: scroll;
+    -webkit-background-size: auto 150%;
+    -moz-background-size: auto 150%;
+    background-size: auto 150%;
+  }
   .profile-banner .scroll-down {
     width: 100%;
     right: 0;
+  }
+  .profile-banner .container {
+    top: 20%;
+    padding-top: 0;
   }
   .navbar {
     left: 0;

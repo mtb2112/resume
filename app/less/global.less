@@ -475,9 +475,17 @@ button {
 
 @media (max-width: 767px) {
     .profile-banner {
+        background-attachment: scroll;
+        .background-size(auto, 150%);
+
         .scroll-down {
             width: 100%;
             right: 0;
+        }
+
+        .container {
+            top: 20%;
+            padding-top: 0;
         }
     }
     .navbar {
