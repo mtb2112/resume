@@ -67,6 +67,29 @@ module.exports = function(grunt) {
                     "<%= config.app.img %>svg-defs.svg": ["<%= config.app.svg %>*.svg"]
                 }
             }
+        },
+
+        cssmin: {
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= config.app.css %>',
+                    src: ['*.css', '!*.min.css'],
+                    dest: '<%= config.app.css %>',
+                    ext: '.min.css'
+                }]
+            }
+        },
+
+        uglify: {
+            options: {
+                mangle: false
+            },
+            my_target: {
+                files: {
+                    '<%= config.app.js %>custom.min.js' : ['<%= config.app.js %>custom.js']
+                }
+            }
         }
     });
 

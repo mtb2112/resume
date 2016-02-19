@@ -3,7 +3,7 @@
         "user": {
             "name": "Paul Guardino",
             "resumeTitle": "Interactive Resume",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "description": "A front-end web developer with more than 6+ years in the field.  I enjoy working with others as I believe that is one of the best ways to learn and improve your craft.  I pay attention to the details and hold myself to a high standard when it comes to the quality of my work.",
             "age": "34",
             "location": "Phoenixville, Pennsylvania",
             "title": "The Resume of Paul Guardino | Front-End Web Developer | Phoenixville, Pennsylvania"
@@ -20,7 +20,7 @@
                 "start" : "September 2005",
                 "end" : "May 2009",
                 "position" : "Bachelor's Degree - Digital Design",
-                "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "description" : "With the focus of my education being design, I learned the importance of paying attention to detail.  I discovered here how much I enjoyed collaborating within a group of like-minded individuals.  Problem solving was an invaluable skill that I learned during my time at Philadelphia University, and that is one of the many things that I've carried over into my career to this day.  I also learned the importance of meeting deadlines, quality of work, and the desire to never stop learning.",
                 "location" : "Philadelphia, Pennsylvania",
                 "url" : "http://www.philau.edu"
             },
@@ -40,7 +40,7 @@
                 "start" : "February 2012",
                 "end" : "current",
                 "position" : "Fulltime - Front-End Web Engineer",
-                "description" : "Worked closely with other developers, designers and project managers to help launch new e-commerce sites using our new CMS platform. I learned the inner workings of the new platform and brainstormed with other team members on ways to improve the platform to help future launches. Planned out documentation consisting of CSS3 implementation and setting up local sandbox development environments.  Worked on implementing 3rd party modules on the Magento Enterprise platform as well as defect burn down and client support.",
+                "description" : "Worked closely with other developers, designers and project managers to help launch new e-commerce sites using our new CMS platform. I learned the inner workings of the new platform and brainstormed with other team members on ways to improve the platform to help future launches. Planned out documentation consisting of CSS3 implementation and setting up local sandbox development environments.  Worked on implementing 3rd party modules on the Magento Enterprise platform as well as defect burndown and client support.",
                 "location" : "King of Prussia, Pennsylvania",
                 "url" : "http://www.ebayenterprise.com"
             },

@@ -172,6 +172,19 @@ button {
 .navbar-toggle {
   padding: 3px 10px;
 }
+.resume-link {
+  margin-top: 3px;
+  display: block;
+}
+.resume-link span {
+  font-family: 'Sanchez', serif;
+}
+.resume-link .fa:before {
+  padding-right: 5px;
+}
+.resume-link:hover {
+  color: #dc3522;
+}
 .profile-banner {
   background: no-repeat center right fixed url(../images/banner-background.jpg);
   margin-bottom: 0;
@@ -246,6 +259,9 @@ button {
 }
 .profile-photo {
   border: 5px solid #94cfe1;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
   -webkit-border-radius: 130px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 130px;
@@ -338,13 +354,14 @@ button {
 }
 .experience-link a {
   font-family: 'Sanchez', serif;
-  padding-left: 8px;
   text-decoration: none;
   color: #94cfe1;
 }
 .experience-link a:hover {
-  text-decoration: underline;
   color: #dc3522;
+}
+.experience-link span {
+  font-family: 'Sanchez', serif;
 }
 .experience-description {
   display: block;
@@ -357,6 +374,9 @@ button {
 .fa-bars:before {
   font-size: 2em;
   color: #ffffff;
+}
+.fa-external-link:before {
+  padding-right: 8px;
 }
 .skill-title,
 .skill-level {
@@ -394,9 +414,6 @@ button {
   padding-left: 10px;
   font-size: 1.2em;
   vertical-align: text-bottom;
-}
-.contact-background span:hover {
-  text-decoration: underline;
 }
 @media (max-width: 767px) {
   .profile-banner .scroll-down {

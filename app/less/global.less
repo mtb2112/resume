@@ -213,6 +213,25 @@ button {
     }
 }
 
+.resume-link {
+    margin-top: 3px;
+    display: block;
+
+    span {
+        font-family: @font-family;
+    }
+
+    .fa {
+        &:before {
+            padding-right: 5px;
+        }
+    }
+
+    &:hover {
+        color: @link-color;
+    }
+}
+
 .profile {
     &-banner {
         background: no-repeat center right fixed url(../images/banner-background.jpg);
@@ -286,6 +305,9 @@ button {
 
     &-photo {
         border: 5px solid @light-blue;
+        width: 100%;
+        max-width: 260px;
+        height: auto;
         .border-radius(130px);
     }
 }
@@ -357,14 +379,16 @@ button {
     &-link {
         a {
             font-family: @font-family;
-            padding-left: 8px;
             text-decoration: none;
             color: @light-blue;
 
             &:hover {
-                text-decoration: underline;
                 color: @link-color;
             }
+        }
+
+        span {
+            font-family: @font-family;
         }
     }
 
@@ -385,6 +409,11 @@ button {
         &:before {
             font-size: 2em;
             color: @white;
+        }
+    }
+    &-external-link {
+        &:before {
+            padding-right: 8px;
         }
     }
 }
@@ -440,10 +469,6 @@ button {
             padding-left: 10px;
             font-size: 1.2em;
             vertical-align: text-bottom;
-
-            &:hover {
-                text-decoration: underline;
-            }
         }
     }
 }

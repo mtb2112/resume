@@ -1,12 +1,24 @@
 doctype html
 html
     head
+        meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+        meta(http-equiv='content-script-type', content='text/javascript')
+        meta(http-equiv='content-style-type', content='text/css')
+        meta(http-equiv='content-language', content='en')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(name='author' content='Paul Guardino')
+        meta(name='description', content="I'm Paul Guardino.  A web developer with a concentration in front-end development.")
+        meta(name='keywords', content='Paul Guardino, Interactive Resume, Web Developer, Resume, HTML, CSS, PHP, Grunt, Programmer, Philadelphia, Phoenixville')
+        meta(name='robots', content="index, follow")
+        meta(name='revisit-after', content='14 days')
         title #{resume.user.title}
         - var cssRoot = 'css';
         - var jsRoot = 'js';
         link(rel='stylesheet', href='#{cssRoot}/bootstrap.min.css')
-        link(rel='stylesheet', href='#{cssRoot}/global.css')
+        link(rel='stylesheet', href='#{cssRoot}/global.min.css')
         link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+        link(rel='shortcut icon', href="favicon.ico", type='image/x-icon')
+        link(rel='icon', href="favicon.ico", type='image/x-icon')
     body.global(data-spy="scroll", data-target=".navbar")
         include ../../images/svg-defs.svg
         div#top.profile-banner(data-position='center right')
@@ -50,6 +62,10 @@ html
                         strong Location:
                         br
                         |#{resume.user.location}
+                        br
+                        a.resume-link(href="pdf/guardinoresume.pdf", title="Download Resume", target="_blank")
+                            i.fa.fa-file-pdf-o
+                                span Download Resume
         div.experience-full
             div#experience.container
                 h2.section-heading Experiences
@@ -68,9 +84,10 @@ html
                                     span.experience-information
                                         i.fa.fa-map-marker
                                             span.experience-location #{role.location}
-                                        i.fa.fa-external-link
-                                            span.experience-link
-                                                a(href='#{role.url}', target='_blank') #{role.url}
+                                    span.experience-link
+                                        a(href='#{role.url}', target='_blank')
+                                            i.fa.fa-external-link
+                                                span #{role.url}
                 hr
                 h3.sub-heading Careers
                 div.experiences
@@ -86,9 +103,10 @@ html
                                     span.experience-information
                                         i.fa.fa-map-marker
                                             span.experience-location #{role.location}
-                                        i.fa.fa-external-link
-                                            span.experience-link
-                                                a(href='#{role.url}', target='_blank') #{role.url}
+                                    span.experience-link
+                                        a(href='#{role.url}', target='_blank')
+                                            i.fa.fa-external-link
+                                                span #{role.url}
         div.abilities-background
             div#abilities.container
                 h2.section-heading Abilities
@@ -160,5 +178,5 @@ html
                                     span Instagram
                 hr
         script(type='text/javascript', src='https://code.jquery.com/jquery-1.10.2.min.js')
-        script(type='text/javascript', src='#{jsRoot}/custom.js')
+        script(type='text/javascript', src='#{jsRoot}/custom.min.js')
         script(type='text/javascript', src='#{jsRoot}/bootstrap.min.js')
