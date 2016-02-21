@@ -32,7 +32,7 @@ module.exports = function(grunt) {
             },
             styles: {
                 files: ['<%= config.app.less %>**/*.less', '<%= config.app.jade %>**/*.jade', '<%= config.app.svgs %>*.svg'], // which files to watch
-                tasks: ['less', 'jade', 'svgstore'],
+                tasks: ['less', 'jade', 'svgstore', 'cssmin'],
                 options: {
                     nospawn: true
                 }

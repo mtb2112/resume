@@ -430,6 +430,9 @@ button {
     top: 20%;
     padding-top: 0;
   }
+  .profile-banner .author {
+    font-size: 4em;
+  }
   .navbar {
     left: 0;
     width: 100%;
