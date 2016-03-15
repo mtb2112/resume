@@ -3,7 +3,7 @@
         "user": {
             "name": "Paul Guardino",
             "resumeTitle": "Interactive Resume",
-            "description": "A front-end web developer with more than 6+ years in the field.  I enjoy working with others as I believe that is one of the best ways to learn and improve your craft.  I pay attention to the details and hold myself to a high standard when it comes to the quality of my work.",
+            "description": "A front-end web developer with more than 6 years in the field.  I enjoy working with others as I believe that is one of the best ways to learn and improve your craft.  I pay attention to the details and hold myself to a high standard when it comes to the quality of my work.",
             "age": "34",
             "location": "Phoenixville, Pennsylvania",
             "title": "The Resume of Paul Guardino | Front-End Web Developer | Phoenixville, Pennsylvania"
@@ -56,7 +56,7 @@
             {
                 "company" : "Red Tettemer",
                 "start" : "June 2009",
-                "end" : "September 2011",
+                "end" : "September 2009",
                 "position" : "Internship - Wordpress Developer",
                 "description" : "I assisted the interactive team with building out pages from Photoshop comps, helped with Wordpress development and coordinated with account managers and clients.",
                 "location" : "Philadelphia, Pennsylvania",
@@ -124,7 +124,7 @@
             },
             {
                 "name" : "JSON",
-                "level" : "three"
+                "level" : "four"
             },
             {
                 "name" : "AngularJS",
