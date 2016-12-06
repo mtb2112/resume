@@ -3,8 +3,8 @@
         "user": {
             "name": "Paul Guardino",
             "resumeTitle": "Interactive Resume",
-            "description": "A front-end web developer with more than 6 years in the field.  I enjoy working with others as I believe that is one of the best ways to learn and improve your craft.  I pay attention to the details and hold myself to a high standard when it comes to the quality of my work.",
-            "age": "34",
+            "description": "A front-end web developer with more than 7 years in the field.  I enjoy working with others as I believe that is one of the best ways to learn and improve your craft.  I pay attention to the details and hold myself to a high standard when it comes to the quality of my work.",
+            "age": "35",
             "location": "Phoenixville, Pennsylvania",
             "title": "The Resume of Paul Guardino | Front-End Web Developer | Phoenixville, Pennsylvania"
         },
@@ -36,9 +36,18 @@
         ],
         "workTimeline": [
             {
+                "company" : "Inverse Paradox",
+                "start" : "April 2016",
+                "end" : "current",
+                "position" : "Fulltime - Magento Front-End Developer",
+                "description" : "Within a small development team focusing on Magento 1 and Magento 2 webstores, I help develop custom themes for the frontend, and integrate third-party extensions.  I also assist in debugging and fixing issues with our current webstores through Zendesk.  I am also responsible for code deployment on many development and production environments through Beanstalk.",
+                "location" : "Penndel, Pennsylvania",
+                "url" : "http://www.inverseparadox.com/"
+            },
+            {
                 "company" : "Ebay Enterprise",
                 "start" : "February 2012",
-                "end" : "current",
+                "end" : "March 2016",
                 "position" : "Fulltime - Front-End Web Engineer",
                 "description" : "Worked closely with other developers, designers and project managers to help launch new e-commerce sites using our new CMS platform. I learned the inner workings of the new platform and brainstormed with other team members on ways to improve the platform to help future launches. Planned out documentation consisting of CSS3 implementation and setting up local sandbox development environments.  Worked on implementing 3rd party modules on the Magento Enterprise platform as well as defect burndown and client support.",
                 "location" : "King of Prussia, Pennsylvania",
@@ -78,15 +87,15 @@
             },
             {
                 "name" : "jQuery",
-                "level" : "three"
+                "level" : "four"
             },
             {
                 "name" : "Javascript",
-                "level" : "two"
+                "level" : "three"
             },
             {
                 "name" : "SASS",
-                "level" : "three"
+                "level" : "four"
             },
             {
                 "name" : "Bootstrap",
@@ -120,6 +129,10 @@
             },
             {
                 "name" : "Magento",
+                "level" : "four"
+            },
+            {
+                "name" : "Magento 2",
                 "level" : "three"
             },
             {
@@ -132,7 +145,7 @@
             },
             {
                 "name" : "MySQL",
-                "level" : "two"
+                "level" : "three"
             },
             {
                 "name" : "Object Oriented Programming",
@@ -167,6 +180,10 @@
             {
                 "name" : "Firefox",
                 "level" : "three"
+            },
+            {
+                "name" : "Sourcetree",
+                "level" : "three"
             }
         ],
         "toolsRight": [
@@ -176,11 +193,11 @@
             },
             {
                 "name" : "XAMPP",
-                "level" : "three"
+                "level" : "four"
             },
             {
                 "name" : "MAMP",
-                "level" : "three"
+                "level" : "four"
             },
             {
                 "name" : "Abobe Photoshop",
@@ -197,6 +214,10 @@
             {
                 "name" : "Microsoft Office",
                 "level" : "five"
+            },
+            {
+                "name" : "Beanstalk",
+                "level" : "four"
             }
         ],
         "contactLinksLeft": [

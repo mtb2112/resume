@@ -9,6 +9,7 @@ module.exports = function(grunt) {
                 css: "css/",
                 jade: "app/views/",
                 svg: "app/svgs/",
+                json: "app/json/"
             }
         },
 
@@ -31,7 +32,7 @@ module.exports = function(grunt) {
                 livereload: false,
             },
             styles: {
-                files: ['<%= config.app.less %>**/*.less', '<%= config.app.jade %>**/*.jade', '<%= config.app.svgs %>*.svg'], // which files to watch
+                files: ['<%= config.app.less %>**/*.less', '<%= config.app.jade %>**/*.jade', '<%= config.app.svgs %>*.svg', '<%= config.app.json %>**/*.json'], // which files to watch
                 tasks: ['less', 'jade', 'svgstore', 'cssmin'],
                 options: {
                     nospawn: true
