@@ -81,6 +81,14 @@ ol ul {
   font-size: 90%;
 }
 
+a {
+    transition: all 0.2s ease 0s;
+    
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 .container {
     padding:40px 180px;
 }
@@ -90,6 +98,7 @@ button.button-primary {
   color: #fff;
   background-color: @primary-color;
   border-color: @primary-color;
+  transition: all 0.2s ease 0s;
 }
 
 .button.button-primary:hover,
@@ -437,6 +446,7 @@ button {
     &-background {
         li {
             padding: 3px 0;
+            transition: all 0.2s ease 0s;
 
             &:hover {
                 background: lighten(@light-grey, 60%);

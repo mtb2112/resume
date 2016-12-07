@@ -71,6 +71,12 @@ ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%;
 }
+a {
+  transition: all 0.2s ease 0s;
+}
+a:hover {
+  text-decoration: none;
+}
 .container {
   padding: 40px 180px;
 }
@@ -79,6 +85,7 @@ button.button-primary {
   color: #fff;
   background-color: #004156;
   border-color: #004156;
+  transition: all 0.2s ease 0s;
 }
 .button.button-primary:hover,
 button.button-primary:hover {
@@ -390,6 +397,7 @@ button {
 }
 .abilities-background li {
   padding: 3px 0;
+  transition: all 0.2s ease 0s;
 }
 .abilities-background li:hover {
   background: #d2d8d8;
