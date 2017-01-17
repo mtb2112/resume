@@ -36,13 +36,22 @@
         ],
         "workTimeline": [
             {
+                "company" : "Penn Mutual",
+                "start" : "January 2017",
+                "end" : "current",
+                "position" : "Fulltime - Web Developer",
+                "description" : "",
+                "location" : "Horsham, Pennsylvania",
+                "url" : "http://www.pennmutual.com"
+            },
+            {
                 "company" : "Inverse Paradox",
                 "start" : "April 2016",
-                "end" : "current",
+                "end" : "January 2017",
                 "position" : "Fulltime - Magento Front-End Developer",
                 "description" : "Within a small development team focusing on Magento 1 and Magento 2 webstores, I help develop custom themes for the frontend, and integrate third-party extensions.  I also assist in debugging and fixing issues with our current webstores through Zendesk.  I am also responsible for code deployment on many development and production environments through Beanstalk.",
                 "location" : "Penndel, Pennsylvania",
-                "url" : "http://www.inverseparadox.com/"
+                "url" : "http://www.inverseparadox.com"
             },
             {
                 "company" : "Ebay Enterprise",
