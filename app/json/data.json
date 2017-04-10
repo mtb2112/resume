@@ -40,7 +40,7 @@
                 "start" : "January 2017",
                 "end" : "current",
                 "position" : "Fulltime - Web Developer",
-                "description" : "",
+                "description" : "Develop and maintain internal tools used by a large network of advisors as well as home office users.  Responsible for helping set standards in a small, agile development team.  I also work towards maintaing a strong frontend architecture across all of our applications.",
                 "location" : "Horsham, Pennsylvania",
                 "url" : "http://www.pennmutual.com"
             },
@@ -150,7 +150,7 @@
             },
             {
                 "name" : "AngularJS",
-                "level" : "one"
+                "level" : "two"
             },
             {
                 "name" : "MySQL",
