@@ -4,9 +4,9 @@
             "name": "Paul Guardino",
             "resumeTitle": "Interactive Resume",
             "description": "A front-end web developer with more than 7 years in the field.  I enjoy working with others as I believe that is one of the best ways to learn and improve your craft.  I pay attention to the details and hold myself to a high standard when it comes to the quality of my work.",
-            "age": "35",
-            "location": "Phoenixville, Pennsylvania",
-            "title": "The Resume of Paul Guardino | Front-End Web Developer | Phoenixville, Pennsylvania"
+            "age": "36",
+            "location": "Philadelphia, Pennsylvania",
+            "title": "The Resume of Paul Guardino | Front-End Web Developer | Philadelphia, Pennsylvania"
         },
         "sections" : [
             { "name" : "profile" },
@@ -108,7 +108,7 @@
             },
             {
                 "name" : "Bootstrap",
-                "level" : "three"
+                "level" : "four"
             },
             {
                 "name" : "Wordpress",
@@ -117,6 +117,10 @@
             {
                 "name" : "JADE Template Engine",
                 "level" : "three"
+            },
+            {
+                "name" : "Gulp",
+                "level": "four"
             }
         ],
         "skillsRight": [
@@ -150,7 +154,7 @@
             },
             {
                 "name" : "AngularJS",
-                "level" : "two"
+                "level" : "three"
             },
             {
                 "name" : "MySQL",
@@ -162,6 +166,10 @@
             }
         ],
         "toolsLeft": [
+            {
+                "name" : "IntelliJ IDEA",
+                "level" : "three"
+            },
             {
                 "name" : "Sublime Text",
                 "level" : "five"
@@ -196,6 +204,10 @@
             }
         ],
         "toolsRight": [
+            {
+                "name" : "Postman",
+                "level" : "three"
+            },
             {
                 "name" : "Subversion",
                 "level" : "four"
