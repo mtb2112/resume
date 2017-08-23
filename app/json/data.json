@@ -100,7 +100,11 @@
             },
             {
                 "name" : "Javascript",
-                "level" : "three"
+                "level" : "four"
+            },
+            {
+                "name" : "React",
+                "level" : "two"
             },
             {
                 "name" : "SASS",
@@ -127,6 +131,10 @@
             {
                 "name" : "Grunt Task Runner",
                 "level" : "four"
+            },
+            {
+                "name" : "Redux",
+                "level" : "two"
             },
             {
                 "name" : "Command Line",
