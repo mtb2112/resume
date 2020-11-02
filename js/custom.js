@@ -6,7 +6,19 @@ $(document).ready(function() {
     applyMobileNavCollapse();
     applyNavigation();
     scrollNav();
+    calculateAge(new Date(1981,6,16), new Date());
 });
+
+function calculateAge(date1, date2) {
+  var diff = (date2.getTime() - date1.getTime()) / 1000;
+  var age
+
+  diff /= (60 * 60 * 24);
+
+  age = Math.abs(Math.round(diff/365.25));
+
+  $('.age').html(age)
+ }
 
 function applyHeader() {
     $('.profile-banner').css({ height: ($(window).height()) + 'px' });
